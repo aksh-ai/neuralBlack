@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Brain Tumor Classifier</title>
+        <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i,700" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"/>
+    </head>
+    <header>
+            <nav>
+              <div class="nav-bg"></div>
+              <ul>
+                <li><a href="/"><img src="{{ url_for('static', filename='images/logo.png') }}" height=40px width=40px alt="neural classifier"/> <p> neural classifier</p></a></li>
+              </ul>
+            </nav>
+    </header>
+    <label class="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+    </label>
+    <body>
+        <div class="cardpred">
+            <div class="container">
+                    <img src="{{ url_for('static', filename='images/' + f_name) }}" height=52.5% width=52.5%/>
+                    <p>{{ pred }}</p>
+                    <button type="button"><a href="/empty_page" style="text-decoration: None; color: white;">Go home</button>
+            </div>
+        </div>
+    </body>
+</html>

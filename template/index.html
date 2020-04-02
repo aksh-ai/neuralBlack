@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Brain Tumor Classifier</title>
+        <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i,700" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"/>
+    </head>
+    <header>
+            <nav>
+              <div class="nav-bg"></div>
+              <ul>
+                <li><a href="/"><img src="{{ url_for('static', filename='images/logo.png') }}" height=40px width=40px alt="neural classifier"/> <p> neural classifier</p></a></li>
+              </ul>
+            </nav>
+    </header>
+    <label class="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+    </label>
+    <body>
+        <div class="card">
+            <div class="container">
+                    <div class="upload-btn-wrapper">
+                        <form name='bt_classifier' action='/' method='POST' enctype="multipart/form-data">
+                        <center><button class="btn">Upload an Image</button></center>
+                        <input type="file" name="bt_image" id="bt_image"/>
+                        <button type='submit' name='submit' id='sub'>Classify</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
