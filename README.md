@@ -44,25 +44,25 @@ Before running the programs, kindly install the requirements as given in Require
 
 #### Classification Results via Web Interface
 
-* ![class 1](results/web2.png)
+![class 1](results/web2.png)
 
-* ![class 2](results/web3.png)
+![class 2](results/web3.png)
 
-* ![class 3](results/web4.png)
+![class 3](results/web4.png)
 
 ### Classifier Evaluation
 
 #### Loss Graph
 
-* ![Loss Metrics](results/loss_metrics.png)
+![Loss Metrics](results/loss_metrics.png)
 
 #### Accuracy Graph
 
-* ![Accuracy Metrics](results/accuracy_metrics.png)
+![Accuracy Metrics](results/accuracy_metrics.png)
 
 #### Confusion Matrix
 
-* ![Confusion Matrix](results/cm.png)
+![Confusion Matrix](results/cm.png)
 
 ## Requirements
 
