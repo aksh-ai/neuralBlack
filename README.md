@@ -40,7 +40,7 @@ Before running the programs, kindly install the requirements as given in Require
 
 #### Home Page
 
-* ![index](results/web1.png)
+![index](results/web1.png)
 
 #### Classification Results via Web Interface
 
