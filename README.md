@@ -24,7 +24,7 @@ This brain tumor dataset containing 3064 T1-weighted contrast-inhanced images fr
 
 ## Running the classifier
 
-Download the classifier model '.pt' file from this [drive link](https://drive.google.com/open?id=1-TOWpgVBayVS-rIrf3Z9R1dV5678zQeL)
+Download the classifier model '.pt' file from this [drive link](https://drive.google.com/open?id=1-TOWpgVBayVS-rIrf3Z9R1dV5678zQeL) and place it under a folder named 'models' in the same directory where the files of this repository are present.
 
 Before running the programs, kindly install the requirements as given in Requirements section of this README.
 
