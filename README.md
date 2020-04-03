@@ -60,7 +60,7 @@ Before running the programs, kindly install the requirements as given in Require
 
 ![Accuracy Metrics](results/accuracy_metrics.png)
 
-#### Confusion Matrix
+#### Confusion Matrix on Test set
 
 ![Confusion Matrix](results/cm.png)
 
