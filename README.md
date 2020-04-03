@@ -6,7 +6,7 @@ We have used fine-tuned ResNet50 Neural Network architecture with almost **99 % 
 
 ## About
 
-This project was done by Akshay Kumaar M. Research Paper is in progress. All the references papers have been included at the end of this README file.
+This project was done by Akshay Kumaar M. Research Paper is in progress. All the references papers have been included at the end of this repository's README.
 
 ## ResNet50 Neural Network Architecture
 
