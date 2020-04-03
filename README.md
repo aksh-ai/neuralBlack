@@ -4,9 +4,17 @@ A Brain Tumor Classifier that can classify tumor into 3 classes: **Meningioma, G
 
 We have used fine-tuned ResNet50 Neural Network architecture with almost **99 % Accuracy** achieved by applying the method of Transfer Learning.
 
+## About
+
+This project was done by Akshay Kumaar M. Research Paper is in progress. All the references papers have been included at the end of this README file.
+
+## ResNet50 Neural Network Architecture
+
+![NN image](https://www.researchgate.net/publication/331364877/figure/fig3/AS:741856270901252@1553883726825/Left-ResNet50-architecture-Blocks-with-dotted-line-represents-modules-that-might-be.png)
+
 ## Dataset
 
-We have used [brain tumor dataset](https://figshare.com/articles/brain_tumor_dataset/1512427) posted by **Jun Cheng**.
+We have used [brain tumor dataset](https://figshare.com/articles/brain_tumor_dataset/1512427) posted by **Jun Cheng** on [figshare.com](figshare.com).
 
 This brain tumor dataset containing 3064 T1-weighted contrast-inhanced images from 233 patients with three kinds of brain tumor: meningioma (708 slices), glioma (1426 slices), and pituitary tumor (930 slices). 
 
@@ -91,19 +99,11 @@ We'll be using the following libraries to complete our classification problem:
 * **Pickle** - To save and load binary files of our training data
 * **Scikit-Learn** - Machien learning framework. We ahve used this for evaluating our Classifier and for cross-validation split
 * **Matplotlib** - To visualize images, losses and accuracy
-* **Google Colab Drive** - To mount Google Drive so we can perform storage and loading operations using it
+* **Google Colab Drive** - To mount Google Drive so we can perform storage and loading operations using it (Only available on Google Colab)
 
-Also the above mentioned libraries comes pre-installed and pre-configured with Google Colab.
+The above mentioned libraries comes pre-installed and pre-configured with Google Colab.
 
-#### Pytorch
-
-Follow the steps for installation given in the official website of [Pytorch](https://pytorch.org).
-
-#### Other Libraries
-
-Install the required libraries using the pip package manager and requirements.txt file.
-
-Install the required libraries using the [pip](https://pip.pypa.io/en/stable/) package manager.
+Install the required libraries on your computer using the [pip](https://pip.pypa.io/en/stable/) package manager.
 
 For pip version 19.1 or above:
 
@@ -117,9 +117,9 @@ or
 pip3 install -r requirements.txt --user
 ~~~
 
-## About
+#### Pytorch
 
-This project was done by Akshay Kumaar M. Research Paper is in progress.
+Follow the steps for installation given in the official website of [Pytorch](https://pytorch.org).
 
 ## References
 
@@ -129,6 +129,14 @@ This project was done by Akshay Kumaar M. Research Paper is in progress.
 
 * [A Deep Learning-Based Framework for Automatic Brain Tumors Classification Using Transfer Learning](https://link.springer.com/article/10.1007/s00034-019-01246-3)
 
+* [Deep Residual Learning for Image Recognition (ResNet)](https://arxiv.org/pdf/1512.03385.pdf)
+
 ### Documentations
 
 * [Pytorch](https://pytorch.org/docs/stable/index.html)
+
+## Future Scopes
+
+* Brain Tumor segmentation using GANs.
+* Brain Tumor detection using Object Detection for localization of tumor in a given MRI image of the brain.
+* Improve existing classification model and web interface.
