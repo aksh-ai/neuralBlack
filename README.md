@@ -6,7 +6,7 @@ We have used fine-tuned ResNet50 Neural Network architecture with almost **99 % 
 
 ## About
 
-This project was done by Akshay Kumaar M. Research Paper is in progress. All the references papers have been included at the end of this repository's README.
+This project was done by Akshay Kumaar M. Paper is in progress. All the references papers have been included at the end of this repository's README.
 
 ## ResNet50 Neural Network Architecture
 
@@ -122,6 +122,8 @@ pip3 install -r requirements.txt --user
 Follow the steps for installation given in the official website of [Pytorch](https://pytorch.org).
 
 ## References
+
+Thanks to [Vinoth Arjun](https://github.com/vinotharjun) for helping with custom data loader class with different augmentations.
 
 ### Research Papers
 
