@@ -123,7 +123,7 @@ Follow the steps for installation given in the official website of [Pytorch](htt
 
 ## References
 
-Thanks to [Vinoth Arjun](https://github.com/vinotharjun) for helping with custom data loader class with different augmentations.
+Thanks to [Vinoth Arjun](https://github.com/vinotharjun) for giving ideas for custom dataset class with different real-time augmentations.
 
 ### Research Papers
 
