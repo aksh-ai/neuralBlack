@@ -16,7 +16,7 @@ This project was done by Akshay Kumaar M. Paper is in progress. All the referenc
 
 We have used [brain tumor dataset](https://figshare.com/articles/brain_tumor_dataset/1512427) posted by **Jun Cheng** on [figshare.com](figshare.com).
 
-This brain tumor dataset containing 3064 T1-weighted contrast-inhanced images from 233 patients with three kinds of brain tumor: meningioma (708 slices), glioma (1426 slices), and pituitary tumor (930 slices). 
+This brain tumor dataset containing 3064 T1-weighted contrast-inhanced images from 233 patients with three kinds of brain tumor: meningioma (708 slices), glioma (1426 slices), and pituitary tumor (930 slices).
 
 ## Modules
 
@@ -32,15 +32,15 @@ This brain tumor dataset containing 3064 T1-weighted contrast-inhanced images fr
 
 ## Running the classifier
 
-Download the classifier model '.pt' file from this [drive link](https://drive.google.com/open?id=1-TOWpgVBayVS-rIrf3Z9R1dV5678zQeL) and place it under a folder named 'models' in the same directory where the files of this repository are present.
+Download the classifier model '.pt' file from this [drive link](https://drive.google.com/file/d/1-rIrzzqpsSg80QG175hjEPv9ilnSHmqK/view?usp=sharing) and place it under a folder named 'models' in the same directory where the files of this repository are present.
 
 Before running the programs, kindly install the requirements as given in Requirements section of this README.
 
 * Use the [test.py](test.py) script for running the script in Terminal, Powershell or Command Prompt.
-    * `python test.py`
+  * `python test.py`
 
 * Use [deploy.py](deploy.py) script to access the classifier as an interactive web interface.
-    * `python deploy.py`
+  * `python deploy.py`
 
 ## Screenshots (Results & Web Interface)
 
@@ -82,14 +82,14 @@ Project done using Google Colab with follwing specifications:
 
 * Ubuntu 18.04 64-bit OS
 * 12 GB DDR4 RAM
-* 8 GB NVidia Tesla K40 GPU
+* 16 GB NVidia Tesla P100 GPU
 * 40 GB of Non-Persistent Storage
 
 ### Library Requirements
 
 We'll be using the following libraries to complete our classification problem:
 
-* **Numpy** - For linear algebra operations 
+* **Numpy** - For linear algebra operations
 * **Torch** - Pytorch Deep Learning Framework
 * **OS** - To use Operating System methods
 * **Random** - To set random seed at specific places where random operations take place just so it happens the same way everytime it is executed
@@ -141,4 +141,4 @@ Thanks to [Vinoth Arjun](https://github.com/vinotharjun) for giving ideas for cu
 
 * Brain Tumor segmentation using GANs.
 * Brain Tumor detection using Object Detection for localization of tumor in a given MRI image of the brain.
-* Improve existing classification model and web interface.
+* Improve existing classification model and web interface
