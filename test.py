@@ -16,13 +16,13 @@ for param in resnet_model.parameters():
 n_inputs = resnet_model.fc.in_features
 
 resnet_model.fc = nn.Sequential(nn.Linear(n_inputs, 2048),
-                nn.LeakyReLU(negative_slope=0.2),
-                nn.Dropout(p=0.4),
-                nn.Linear(2048, 2048),
-                nn.LeakyReLU(negative_slope=0.2),
-                nn.Dropout(p=0.4),
-                nn.Linear(2048, 3),
-                nn.LogSoftmax(dim=1))
+                                nn.SELU(),
+                                nn.Dropout(p=0.4),
+                                nn.Linear(2048, 2048),
+                                nn.SELU(),
+                                nn.Dropout(p=0.4),
+                                nn.Linear(2048, 4),
+                                nn.LogSigmoid())
 
 for name, child in resnet_model.named_children():
     for name2, params in child.named_parameters():
@@ -30,13 +30,13 @@ for name, child in resnet_model.named_children():
 
 resnet_model.to(device)
 
-resnet_model.load_state_dict(torch.load('models\\bt_total_resnet_torch.pt'))
+resnet_model.load_state_dict(torch.load('models\\bt_resnet50_model.pt'))
 
 resnet_model.eval()
 
 transform = transforms.Compose([transforms.Resize((512, 512)), transforms.ToTensor()])
 
-LABELS = ['Meningioma', 'Glioma', 'Pitutary']
+LABELS = ['None', 'Meningioma', 'Glioma', 'Pitutary']
 
 img_name = input("Enter path to the image: ")
 
@@ -50,12 +50,9 @@ img = transform(img)
 
 img = img[None, ...]
 
-if device_name=="cuda:0:":
-    img = img.cuda()
-
 with torch.no_grad():
-    y_hat = resnet_model.forward(img)
+    y_hat = resnet_model.forward(img.to(device))
 
-    predicted = torch.max(y_hat.data, 1)[1] 
+    predicted = torch.argmax(y_hat.data, dim=1)
 
     print(LABELS[predicted.data],'\n')
