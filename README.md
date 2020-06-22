@@ -97,7 +97,7 @@ We'll be using the following libraries to complete our classification problem:
 * **Time** - To perform date time operations
 * **Seaborn** - For sophisticated visualization
 * **Pickle** - To save and load binary files of our training data
-* **Scikit-Learn** - Machien learning framework. We ahve used this for evaluating our Classifier and for cross-validation split
+* **Scikit-Learn** - Machine learning framework. We have used this for evaluating our Classifier and for cross-validation split
 * **Matplotlib** - To visualize images, losses and accuracy
 * **Google Colab Drive** - To mount Google Drive so we can perform storage and loading operations using it (Only available on Google Colab)
 
