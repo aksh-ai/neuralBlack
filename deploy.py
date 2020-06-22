@@ -76,6 +76,10 @@ def index():
 
                     img = transform(img)
 
+                    image = transforms.ToPILImage()(img)
+
+                    image = image.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+
                     img = img[None, ...]
 
                     with torch.no_grad():
