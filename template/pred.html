@@ -12,7 +12,7 @@
             <nav>
               <div class="nav-bg"></div>
               <ul>
-                <li><a href="/"><img src="{{ url_for('static', filename='images/logo.png') }}" height=40px width=40px alt="neural classifier"/> <p> neural classifier</p></a></li>
+                <li><a href="/"><img src="{{ url_for('static', filename='images/brain_logo.png') }}" height=40px width=40px alt="neuralBlack"/> <p> neuralBlack</p></a></li>
               </ul>
             </nav>
     </header>
@@ -25,7 +25,7 @@
             <div class="container">
                     <img src="{{ url_for('static', filename='images/' + f_name) }}" height=52.5% width=52.5%/>
                     <p>{{ pred }}</p>
-                    <button type="button"><a href="/empty_page" style="text-decoration: None; color: white;">Go home</button>
+                    <button type="button" id="goHome"><a href="/empty_page" style="text-decoration: None; color: white;">Go home</button>
             </div>
         </div>
     </body>
