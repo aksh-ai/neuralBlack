@@ -40,25 +40,18 @@
 
 .container p{
     font-size: 24px;
-    padding-right: 13.5%;
-    padding-top: 20%;
+    padding-right: 15.5%;
+    padding-top: 20.5%;
     float: right;
 }
 
 .container img{
-    box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.2);
     border-radius: 5px;
     border-color: black;
 }
 
 body{
     font-family:'Roboto Condensed', sans-serif;
-    background-image: 
-    linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)), 
-    url(../images/wall1.jpg);
-    /*background-image: linear-gradient(90deg, rgb(62, 10, 57) , rgb(32, 0, 28), rgb(0, 0, 0));*/
-    background-repeat: no-repeat;
-    background-size: cover;
     font-weight: 400;
 }
 
@@ -72,11 +65,11 @@ input[type=file]{
 
 button{
     width: 100%;
-    padding: 15px 22px;
-    margin: 10px 5px;
+    padding: 15px 15px;
+    margin: 10px 6.5px;
     box-sizing: border-box;
-    border: 2px solid #009faa;
-    background-color: #009faa;
+    border: 2px solid #97ce02;
+    background-color: #97ce02;
     border-radius: 5px; 
     font-family:'Roboto Condensed', sans-serif;
     font-weight: 400;
@@ -84,12 +77,17 @@ button{
     color: white;
 }
 
+button:hover[id=goHome]{
+    transition: 0.2s;
+    transform: scale(1.02);
+}
+
 img {
     vertical-align: middle;
 }
 
 header{
-    background-color: #009faa;
+    background-color: #97ce02;
 }
 
 nav {
@@ -154,7 +152,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #009faa;
+    color: #97ce02;
     transform: scale(1.05);
 }
 
@@ -167,8 +165,8 @@ nav a:hover {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: #009faa;
-    color: #009faa;
+    background: #97ce02;
+    color: #97ce02;
 }
 
 .upload-btn-wrapper {
