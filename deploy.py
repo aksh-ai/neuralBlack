@@ -87,8 +87,6 @@ def index():
 
                         predicted = torch.argmax(y_hat.data, dim=1)
 
-                        print(LABELS[predicted.data])
-
                         session['pred_label'] = LABELS[predicted.data]
                         session['filename'] = filename
 
