@@ -1,12 +1,6 @@
-# Brain Tumor Classification
+# neuralBlack
 
-A Brain Tumor Classifier that can classify tumor into 3 classes: **Meningioma, Glioma, and Pitutary**, if present when given an MRI image of brain.
-
-We have used fine-tuned ResNet50 Neural Network architecture with almost **99 % Accuracy** achieved by applying the method of Transfer Learning.
-
-## About
-
-This project was done by Akshay Kumaar M. Paper is in progress. All the references papers have been included at the end of this repository's README.
+neuralBlack is a complete brain tumor detection, classification, and diagnosis system with high accuracy (99.3%) that uses state of the art Deep Learning methods.
 
 ## ResNet50 Neural Network Architecture
 
@@ -120,6 +114,10 @@ pip3 install -r requirements.txt --user
 #### Pytorch
 
 Follow the steps for installation given in the official website of [Pytorch](https://pytorch.org).
+
+## About
+
+This project was done by Akshay Kumaar M. Paper is in progress. All the references papers have been included at the end of this repository's README.
 
 ## References
 
