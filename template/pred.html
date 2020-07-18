@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+    
     <head>
         <title>neuralBlack</title>
         <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet"> 
@@ -8,6 +9,7 @@
         <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"/>
     </head>
+    
     <header>
             <nav>
               <div class="nav-bg"></div>
@@ -16,17 +18,24 @@
               </ul>
             </nav>
     </header>
+    
     <label class="switch">
         <input type="checkbox">
         <span class="slider round"></span>
     </label>
+    
     <body>
         <div class="cardpred">
             <div class="container">
-                    <img src="{{ url_for('static', filename='images/' + f_name) }}" height=52.5% width=52.5%/>
-                    <p>{{ pred }}</p>
-                    <button type="button" id="goHome"><a href="/empty_page" style="text-decoration: None; color: white;">Go home</button>
+              <img src="{{ url_for('static', filename='images/' + f_name) }}" height=52.5% width=52.5%/>
+              <p>{{ pred }}</p>
+              <button type="button" id="goHome"><a href="/empty_page" style="text-decoration: None; color: white;">Go home</button>
             </div>
         </div>
     </body>
+    
+    <footer>
+      <p style="left: 45.25%;">Made with <img src="{{ url_for('static', filename='images/love.png') }}" height=3% width=3% alt="love"/> by </p><p style="color: white;"><a href="https://github.com/aksh-ai">aksh-ai</a></p>
+    </footer>
+
 </html>
