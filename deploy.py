@@ -3,7 +3,7 @@ import requests
 from flask import Flask, flash, request, redirect, url_for, render_template, session
 from werkzeug.utils import secure_filename
 
-UPLOAD_FOLDER = 'static/images'
+UPLOAD_FOLDER = './static/images'
 ALLOWED_EXTENSIONS = ['png', 'jpg', 'jpeg']
 
 app = Flask(__name__, template_folder='template')
@@ -38,7 +38,8 @@ def index():
                     f.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
 
                     with open(os.path.join(app.config['UPLOAD_FOLDER'], filename),'rb') as img:
-                      predicted = requests.post("http://localhost:5000/predict", files={"file": img}).json()
+                        predicted = requests.post("http://localhost:5000/predict", files={"file": img}).json()
+                        print(predicted)
 
                     session['pred_label'] = predicted['class_name']
                     session['filename'] = filename
