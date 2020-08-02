@@ -39,7 +39,6 @@ def index():
 
                     with open(os.path.join(app.config['UPLOAD_FOLDER'], filename),'rb') as img:
                         predicted = requests.post("http://localhost:5000/predict", files={"file": img}).json()
-                        print(predicted)
 
                     session['pred_label'] = predicted['class_name']
                     session['filename'] = filename
@@ -53,4 +52,5 @@ def index():
     return render_template('index.html')
 
 if __name__=="__main__":
-    app.run(debug=True, port=3000)
+    app.run(port=3000)
+    
